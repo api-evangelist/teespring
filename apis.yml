@@ -1,22 +1,90 @@
 aid: teespring
 name: Teespring
-description: Teespring is a company surfaced as a portfolio company of a16z and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  Teespring is a creator-commerce and print-on-demand platform, founded in 2011,
+  that lets creators design, launch, and sell custom apparel and merchandise with
+  no upfront cost or inventory, handling production, payment, and fulfillment on
+  the creator's behalf. Backed by a16z, the company rebranded to "Spring" in 2021
+  and now operates as Amaze Commerce (part of Amaze Holdings): its consumer
+  storefront lives at spri.ng while the creator/merchant SaaS platform runs at
+  amazecommerce.com and amaze.co. As of this enrichment pass the company exposes
+  no public developer API, developer portal, OpenAPI/AsyncAPI specification,
+  /.well-known discovery surface, or llms.txt; this profile therefore captures
+  verified company identity and published site properties only.
 url: https://raw.githubusercontent.com/api-evangelist/teespring/refs/heads/main/apis.yml
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://cdn.prod.website-files.com/6a2865c1ef548ee7e620fd06/6a2af5009e3f14694c900dd7_AmazeCommerce.png
 x-type: company
 x-source: vc-portfolio
 x-backed-by:
 - a16z
 x-tier: stub
 x-tier-reason: portfolio-lead
+x-former-name: Teespring
+x-current-brand: Amaze Commerce
+x-aliases:
+- Spring
+- Amaze Commerce
+- Amaze Holdings
+x-domains:
+- teespring.com
+- amazecommerce.com
+- amaze.co
+- spri.ng
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
+- Commerce
+- E-Commerce
+- Print on Demand
+- Creator Economy
+- Merchandise
+- Retail
+- Apparel
 apis: []
+common:
+- type: Website
+  url: https://amazecommerce.com/
+- type: About
+  url: https://amazecommerce.com/about
+- type: Pricing
+  url: https://amazecommerce.com/pricing
+- type: SignUp
+  url: https://app.amazecommerce.com/signup
+- type: Login
+  url: https://app.amazecommerce.com/login
+- type: Support
+  url: https://amazecommerce.com/contact
+- type: TermsOfService
+  url: https://www.amaze.co/policies/commerce/terms-of-service
+- type: PrivacyPolicy
+  url: https://www.amaze.co/policies/corporate/privacy-policy
+- type: Storefront
+  url: https://www.spri.ng/
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-21'
+  status: minimal
+  artifacts_added: 0
+  pass: local-v1
+  notes: >-
+    Probed teespring.com (redirects to amazecommerce.com), spri.ng, amaze.co and
+    candidate developer/api/docs subdomains plus /.well-known/* and /llms.txt: no
+    public API surface, developer portal, spec, well-known discovery, or llms.txt
+    found. Identity + published link properties captured only.
